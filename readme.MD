@@ -26,3 +26,12 @@ Arch Linux
 ## Otros detalles
 
 ### Datos del desarrollador 
+
+---
+
+## Próximas funcionalidades
+- Autenticación de usuario
+- Clasificación de tareas por prioridad
+- Interfaz con Bootstrap
+- Filtros de estado
+- Exportar tareas
