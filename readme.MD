@@ -1,40 +1,28 @@
 
-# Crear un entorno virtual (venv) y activarlo.
+# Sistema de gestión de tareas DevTracker 1.0
 
-python3 -m venv DevTracker
-source ../Entorno/DevTracker/bin/activate
+Aplicación realizada para gestionar, documentar y controlar tareas pendientes, a fin de clasificar y tener un control en detalle de los trabajos
 
-# Instalar Django 
+## Tecnologías utilizadas
 
-pip install django
+Python
+Django
+Postgres
+Warp
+Git
+GitHub
+Arch Linux
 
-# Crear el proyecto principal 
+## Requerimientos
 
-django-admin startproject devtracker .
+* clonar este repositorio https://github.com/jmrivera82/DevTracker.git
+* cd devTracker
+* Se sugiere preparar un entorno virtual
+* pip install -r requirements.txt 
+* Requerimientos de base de datos (pendiente de ejecución) 
 
-# Ejecutar el servidor para comprobar que todo funciona 
+## Estructura del proyecto
 
-python3 manage.py migrate
-python3 manage.py runserver
+## Otros detalles
 
-# Crear la app principal 
-
-python manage.py startapp tasks
-
-# Agregar la app a INSTALLED_APPS en settings.py.
-
-* corregir el language_code y time_zone 
-* creación de urls.py en app 
-* redireccionar urls del proyecto hacia la app
-* agregar carpeta templates, crear index y archivos necesarios
-* verificar con runserver la carga del index
-
-# Configurar las plantillas y carpeta estática (para Bootstrap).
-
-* pip install django-bootstrap5
-* agregar 'django_bootstrap5' a settings.py
-* opcional agreagar crispy-forms
-* crear estructura de directorios, template y static
-* agregar index.html o layout con los load correspondientes
-
-Crear un repositorio Git y primer commit.
+### Datos del desarrollador 

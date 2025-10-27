@@ -1,0 +1,41 @@
+# Crear un entorno virtual (venv) y activarlo.
+
+python3 -m venv DevTracker
+source ../Entorno/DevTracker/bin/activate
+
+# Instalar Django 
+
+pip install django
+
+# Crear el proyecto principal 
+
+django-admin startproject devtracker .
+
+# Ejecutar el servidor para comprobar que todo funciona 
+
+python3 manage.py migrate
+python3 manage.py runserver
+
+# Crear la app principal 
+
+python manage.py startapp tasks
+
+# Agregar la app a INSTALLED_APPS en settings.py.
+
+* corregir el language_code y time_zone 
+* creación de urls.py en app 
+* redireccionar urls del proyecto hacia la app
+* agregar carpeta templates, crear index y archivos necesarios
+* verificar con runserver la carga del index
+
+# Configurar las plantillas y carpeta estática (para Bootstrap).
+
+* pip install django-bootstrap5
+* agregar 'django_bootstrap5' a settings.py
+* opcional agreagar crispy-forms
+* crear estructura de directorios, template y static
+* agregar index.html o layout con los load correspondientes
+
+Crear un repositorio Git y primer commit.
+
+
